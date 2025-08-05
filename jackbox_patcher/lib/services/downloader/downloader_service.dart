@@ -80,18 +80,7 @@ class DownloaderService {
   /// Extracts a file from [filePath] to [uri] on Linux
   static Future<void> extractFileToDiskUnix(
       filePath, uri, void Function(String, String, double) callback) async {
-    ProcessResult listProcess;
-    try {
-      listProcess = await Process.run("unzip", ["-l", filePath], stdoutEncoding: Utf8Codec());
-    } catch (e) {
-      JULogger().w("[DownloaderService] UTF-8 decoding failed, trying Latin-1: $e");
-      try {
-        listProcess = await Process.run("unzip", ["-l", filePath], stdoutEncoding: Latin1Codec());
-      } catch (e2) {
-        JULogger().e("[DownloaderService] Both UTF-8 and Latin-1 decoding failed: $e2");
-        rethrow;
-      }
-    }
+    ProcessResult listProcess = await Process.run("unzip", ["-l", filePath], stdoutEncoding: const Utf8Codec());
     int files = listProcess.stdout.split("\n").length;
     listProcess.exitCode;
     Process process = await Process.start("unzip", ["-o", filePath, "-d", uri]);
@@ -108,18 +97,7 @@ class DownloaderService {
   /// Extracts a file from [filePath] to [uri] on Windows
   static Future<void> extractFileToDiskWindows(
       filePath, uri, void Function(String, String, double) callback) async {
-    ProcessResult listProcess;
-    try {
-      listProcess = await Process.run("tar", ["-tf", "$filePath"], stdoutEncoding: Utf8Codec());
-    } catch (e) {
-      JULogger().w("[DownloaderService] UTF-8 decoding failed, trying Latin-1: $e");
-      try {
-        listProcess = await Process.run("tar", ["-tf", "$filePath"], stdoutEncoding: Latin1Codec());
-      } catch (e2) {
-        JULogger().e("[DownloaderService] Both UTF-8 and Latin-1 decoding failed: $e2");
-        rethrow;
-      }
-    }
+    ProcessResult listProcess = await Process.run("tar", ["-tf", "$filePath"], stdoutEncoding: const Utf8Codec());
     int files = listProcess.stdout.split("\n").length;
     listProcess.exitCode;
     Process process =
