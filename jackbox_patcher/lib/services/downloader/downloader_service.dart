@@ -63,8 +63,8 @@ class DownloaderService {
       rethrow;
     } finally {
       isDownloading = false;
+      File(filePath).deleteSync(recursive: true);
     }
-    //File(filePath).deleteSync(recursive: true);
   }
 
   /// Extracts a file from [filePath] to [uri]
