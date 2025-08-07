@@ -5,7 +5,7 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   audioplayers_windows
   dart_discord_rpc
-  screen_retriever
+  screen_retriever_windows
   sentry_flutter
   url_launcher_windows
   window_manager

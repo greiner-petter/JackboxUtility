@@ -21,11 +21,14 @@ class WindowManagerService {
         if (lastWindowInformations.maximized) {
           await windowManager.maximize();
         } else {
-          await windowManager.setBounds(Rect.fromLTWH(
-              lastWindowInformations.x.toDouble(),
-              lastWindowInformations.y.toDouble(),
-              lastWindowInformations.width.toDouble(),
-              lastWindowInformations.height.toDouble()));
+          WindowOptions windowOptions = WindowOptions(
+            size: Size(lastWindowInformations.width.toDouble(), lastWindowInformations.height.toDouble()), 
+            center: true
+          );
+          windowManager.waitUntilReadyToShow(windowOptions, () async {
+            await windowManager.show();
+            await windowManager.focus();
+          });
         }
       });
     } catch (e) {
