@@ -100,17 +100,12 @@ class DownloaderService {
     ProcessResult listProcess = await Process.run("tar", ["-tf", "$filePath"], stdoutEncoding: const Utf8Codec());
     int files = listProcess.stdout.split("\n").length;
     listProcess.exitCode;
-    Process process =
-        await Process.start("tar", ["-xf", '$filePath', "-C", '$uri', "-v"]);
+    Process process = await Process.start("tar", ["-xf", '$filePath', "-C", '$uri', "-v"]);
     int currentFiles = 0;
     process.stderr.listen((data) {
-      try {
-        currentFiles += utf8.decode(data).split("\n").length - 1;
-        callback(TranslationsHelper().appLocalizations!.extracting,
-            "$currentFiles/$files", 75 + ((currentFiles / files) * 25));
-      } catch (e) {
-        JULogger().e("[DownloaderService] $e");
-      }
+    currentFiles += utf8.decode(data).split("\n").length - 1;
+    callback(TranslationsHelper().appLocalizations!.extracting,
+        "$currentFiles/$files", 75 + ((currentFiles / files) * 25));
     });
     await process.exitCode;
     return;
