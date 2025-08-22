@@ -67,3 +67,5 @@ app.*.map.json
 downloads
 
 jackbox_patcher.version
+
+.sentry-native

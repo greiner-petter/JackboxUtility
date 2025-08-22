@@ -38,18 +38,12 @@ class MyApp extends StatelessWidget {
         '/': (context) => const MainContainer(),
         '/serverSelect': (context) => const SelectServerPage(),
         // When navigating to the "/second" route, build the SecondScreen widget.
-        '/settings': (context) =>
-            showMainContainerIfNotLoaded(const ParametersRoute()),
-        '/settings/packs': (context) =>
-            showMainContainerIfNotLoaded(const ParametersPackRoute()),
-        '/game': (context) =>
-            showMainContainerIfNotLoaded(const GameInfoRoute()),
-        '/search': (context) =>
-            showMainContainerIfNotLoaded(const SearchGameRoute()),
-        '/searchMenu': (context) =>
-            showMainContainerIfNotLoaded(const SearchGameMenuWidget()),
-        '/patch': (context) =>
-            showMainContainerIfNotLoaded(const PatcherMenuWidget())
+        '/settings': (context) => showMainContainerIfNotLoaded(const ParametersRoute()),
+        '/settings/packs': (context) => showMainContainerIfNotLoaded(const ParametersPackRoute()),
+        '/game': (context) => showMainContainerIfNotLoaded(const GameInfoRoute()),
+        '/search': (context) => showMainContainerIfNotLoaded(const SearchGameRoute()),
+        '/searchMenu': (context) => showMainContainerIfNotLoaded(const SearchGameMenuWidget()),
+        '/patch': (context) => showMainContainerIfNotLoaded(const PatcherMenuWidget())
       },
       themeMode: ThemeMode.dark,
       title: 'Jackbox Utility',
@@ -57,8 +51,6 @@ class MyApp extends StatelessWidget {
   }
 
   Widget showMainContainerIfNotLoaded(Widget widgetIfLoaded) {
-    return APIService().cachedPacks.isNotEmpty
-        ? widgetIfLoaded
-        : const MainContainer();
+    return APIService().cachedPacks.isNotEmpty ? widgetIfLoaded : const MainContainer();
   }
 }
