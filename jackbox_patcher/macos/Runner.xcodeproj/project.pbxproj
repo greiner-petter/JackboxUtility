@@ -85,6 +85,42 @@
 		6A423E3D39243101BF80CD21 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A72F84472E4332DC0032B87D /* sign_update */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sign_update; sourceTree = "<group>"; };
+		A72F84492E4332DC0032B87D /* BinaryDelta */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = BinaryDelta; sourceTree = "<group>"; };
+		A72F844A2E4332DC0032B87D /* generate_appcast */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = generate_appcast; sourceTree = "<group>"; };
+		A72F844B2E4332DC0032B87D /* generate_keys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = generate_keys; sourceTree = "<group>"; };
+		A72F844C2E4332DC0032B87D /* sign_update */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sign_update; sourceTree = "<group>"; };
+		A72F844E2E4332DC0032B87D /* Autoupdate.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Autoupdate.dSYM; sourceTree = "<group>"; };
+		A72F844F2E4332DC0032B87D /* BinaryDelta.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = BinaryDelta.dSYM; sourceTree = "<group>"; };
+		A72F84502E4332DC0032B87D /* Downloader.xpc.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Downloader.xpc.dSYM; sourceTree = "<group>"; };
+		A72F84512E4332DC0032B87D /* generate_appcast.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = generate_appcast.dSYM; sourceTree = "<group>"; };
+		A72F84522E4332DC0032B87D /* generate_keys.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = generate_keys.dSYM; sourceTree = "<group>"; };
+		A72F84532E4332DC0032B87D /* Installer.xpc.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Installer.xpc.dSYM; sourceTree = "<group>"; };
+		A72F84542E4332DC0032B87D /* sign_update.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = sign_update.dSYM; sourceTree = "<group>"; };
+		A72F84552E4332DC0032B87D /* Sparkle Test App.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = "Sparkle Test App.app.dSYM"; sourceTree = "<group>"; };
+		A72F84562E4332DC0032B87D /* sparkle.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = sparkle.app.dSYM; sourceTree = "<group>"; };
+		A72F84572E4332DC0032B87D /* Sparkle.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Sparkle.framework.dSYM; sourceTree = "<group>"; };
+		A72F84582E4332DC0032B87D /* Updater.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Updater.app.dSYM; sourceTree = "<group>"; };
+		A72F845A2E4332DC0032B87D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A72F845B2E4332DC0032B87D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		A7486D732E43DBE700384BC0 /* sign_update */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = sign_update; sourceTree = "<group>"; };
+		A7486D752E43DBE700384BC0 /* BinaryDelta */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = BinaryDelta; sourceTree = "<group>"; };
+		A7486D762E43DBE700384BC0 /* generate_appcast */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = generate_appcast; sourceTree = "<group>"; };
+		A7486D772E43DBE700384BC0 /* generate_keys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = generate_keys; sourceTree = "<group>"; };
+		A7486D782E43DBE700384BC0 /* sign_update */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sign_update; sourceTree = "<group>"; };
+		A7486D7A2E43DBE700384BC0 /* Autoupdate.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Autoupdate.dSYM; sourceTree = "<group>"; };
+		A7486D7B2E43DBE700384BC0 /* BinaryDelta.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = BinaryDelta.dSYM; sourceTree = "<group>"; };
+		A7486D7C2E43DBE700384BC0 /* Downloader.xpc.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Downloader.xpc.dSYM; sourceTree = "<group>"; };
+		A7486D7D2E43DBE700384BC0 /* generate_appcast.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = generate_appcast.dSYM; sourceTree = "<group>"; };
+		A7486D7E2E43DBE700384BC0 /* generate_keys.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = generate_keys.dSYM; sourceTree = "<group>"; };
+		A7486D7F2E43DBE700384BC0 /* Installer.xpc.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Installer.xpc.dSYM; sourceTree = "<group>"; };
+		A7486D802E43DBE700384BC0 /* sign_update.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = sign_update.dSYM; sourceTree = "<group>"; };
+		A7486D812E43DBE700384BC0 /* Sparkle Test App.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = "Sparkle Test App.app.dSYM"; sourceTree = "<group>"; };
+		A7486D822E43DBE700384BC0 /* sparkle.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = sparkle.app.dSYM; sourceTree = "<group>"; };
+		A7486D832E43DBE700384BC0 /* Sparkle.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Sparkle.framework.dSYM; sourceTree = "<group>"; };
+		A7486D842E43DBE700384BC0 /* Updater.app.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Updater.app.dSYM; sourceTree = "<group>"; };
+		A7486D862E43DBE700384BC0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A7486D872E43DBE700384BC0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		C0D5727C1BD386B24362FB96 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		C715E51A9AC1A083BE157F80 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		D1AD0BC19873C7AB7533D597 /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,9 +234,111 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A72F84482E4332DC0032B87D /* old_dsa_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A72F84472E4332DC0032B87D /* sign_update */,
+			);
+			path = old_dsa_scripts;
+			sourceTree = "<group>";
+		};
+		A72F844D2E4332DC0032B87D /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				A72F84482E4332DC0032B87D /* old_dsa_scripts */,
+				A72F84492E4332DC0032B87D /* BinaryDelta */,
+				A72F844A2E4332DC0032B87D /* generate_appcast */,
+				A72F844B2E4332DC0032B87D /* generate_keys */,
+				A72F844C2E4332DC0032B87D /* sign_update */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		A72F84592E4332DC0032B87D /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				A72F844E2E4332DC0032B87D /* Autoupdate.dSYM */,
+				A72F844F2E4332DC0032B87D /* BinaryDelta.dSYM */,
+				A72F84502E4332DC0032B87D /* Downloader.xpc.dSYM */,
+				A72F84512E4332DC0032B87D /* generate_appcast.dSYM */,
+				A72F84522E4332DC0032B87D /* generate_keys.dSYM */,
+				A72F84532E4332DC0032B87D /* Installer.xpc.dSYM */,
+				A72F84542E4332DC0032B87D /* sign_update.dSYM */,
+				A72F84552E4332DC0032B87D /* Sparkle Test App.app.dSYM */,
+				A72F84562E4332DC0032B87D /* sparkle.app.dSYM */,
+				A72F84572E4332DC0032B87D /* Sparkle.framework.dSYM */,
+				A72F84582E4332DC0032B87D /* Updater.app.dSYM */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		A72F845C2E4332DC0032B87D /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				A72F844D2E4332DC0032B87D /* bin */,
+				A72F84592E4332DC0032B87D /* Symbols */,
+				A72F845A2E4332DC0032B87D /* LICENSE */,
+				A72F845B2E4332DC0032B87D /* Sparkle.framework */,
+			);
+			name = Sparkle;
+			path = Pods/Sparkle;
+			sourceTree = "<group>";
+		};
+		A7486D742E43DBE700384BC0 /* old_dsa_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A7486D732E43DBE700384BC0 /* sign_update */,
+			);
+			path = old_dsa_scripts;
+			sourceTree = "<group>";
+		};
+		A7486D792E43DBE700384BC0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				A7486D742E43DBE700384BC0 /* old_dsa_scripts */,
+				A7486D752E43DBE700384BC0 /* BinaryDelta */,
+				A7486D762E43DBE700384BC0 /* generate_appcast */,
+				A7486D772E43DBE700384BC0 /* generate_keys */,
+				A7486D782E43DBE700384BC0 /* sign_update */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		A7486D852E43DBE700384BC0 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				A7486D7A2E43DBE700384BC0 /* Autoupdate.dSYM */,
+				A7486D7B2E43DBE700384BC0 /* BinaryDelta.dSYM */,
+				A7486D7C2E43DBE700384BC0 /* Downloader.xpc.dSYM */,
+				A7486D7D2E43DBE700384BC0 /* generate_appcast.dSYM */,
+				A7486D7E2E43DBE700384BC0 /* generate_keys.dSYM */,
+				A7486D7F2E43DBE700384BC0 /* Installer.xpc.dSYM */,
+				A7486D802E43DBE700384BC0 /* sign_update.dSYM */,
+				A7486D812E43DBE700384BC0 /* Sparkle Test App.app.dSYM */,
+				A7486D822E43DBE700384BC0 /* sparkle.app.dSYM */,
+				A7486D832E43DBE700384BC0 /* Sparkle.framework.dSYM */,
+				A7486D842E43DBE700384BC0 /* Updater.app.dSYM */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		A7486D882E43DBE700384BC0 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				A7486D792E43DBE700384BC0 /* bin */,
+				A7486D852E43DBE700384BC0 /* Symbols */,
+				A7486D862E43DBE700384BC0 /* LICENSE */,
+				A7486D872E43DBE700384BC0 /* Sparkle.framework */,
+			);
+			name = Sparkle;
+			path = Pods/Sparkle;
+			sourceTree = "<group>";
+		};
 		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A72F845C2E4332DC0032B87D /* Sparkle */,
+				A7486D882E43DBE700384BC0 /* Sparkle */,
 				6A423E3D39243101BF80CD21 /* Pods_Runner.framework */,
 				2DC9000922ABFA52C76050B1 /* Pods_RunnerTests.framework */,
 			);
@@ -268,7 +406,6 @@
 					33CC10EC2044A3C60003C045 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1100;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -477,7 +614,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.jackboxPatcher.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jackbox_patcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/jackbox_patcher";
@@ -492,7 +629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.jackboxPatcher.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jackbox_patcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/jackbox_patcher";
@@ -507,7 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.jackboxPatcher.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jackbox_patcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/jackbox_patcher";
@@ -567,13 +704,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher;
 				PRODUCT_COPYRIGHT = "Open Source from the Jackbox Utility Team ❤️";
 				PRODUCT_NAME = "Jackbox Utility";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -695,13 +836,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher;
 				PRODUCT_COPYRIGHT = "Open Source from the Jackbox Utility Team ❤️";
 				PRODUCT_NAME = "Jackbox Utility";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -717,13 +862,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Release.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackboxutility.jackboxPatcher;
 				PRODUCT_COPYRIGHT = "Open Source from the Jackbox Utility Team ❤️";
 				PRODUCT_NAME = "Jackbox Utility";
 				PROVISIONING_PROFILE_SPECIFIER = "";
