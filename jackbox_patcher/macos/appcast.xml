@@ -4,11 +4,11 @@
         <title>Jackbox Utility</title>
         <item>
             <title>1.4.3</title>
-            <pubDate>Sun, 24 Aug 2025 17:21:28 +0200</pubDate>
+            <pubDate>Sun, 24 Aug 2025 19:49:15 +0200</pubDate>
             <sparkle:version>1.4.3</sparkle:version>
             <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://HOST/JackboxUtility-1.4.3.dmg" length="31400329" type="application/octet-stream" sparkle:edSignature="eTMjJfwGq/5iJQ0F6WqGifD7+hcA6iUzA7BgPiKR1MiZKZfRaxR+TXHbO56zcMs1hlir4r3kcsoIZoOl1JpEDg=="/>
+            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/JackboxUtility-1.4.3.dmg" length="28587563" type="application/octet-stream" sparkle:edSignature="1IxTQltbk+0BO/1DukGC6PWti35urQZ8HbBD7tKod6btromtjzR3RNUfqsnb/+r4X8JoAjxkG9tjIvWV9O6eBA=="/>
         </item>
     </channel>
 </rss>

@@ -29,7 +29,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://greiner-petter.github.io/JackboxUtility/jackbox_patcher/macos/updates/stable/appcast.xml</string>
+	<string>https://greiner-petter.github.io/JackboxUtility/jackbox_patcher/macos/appcast.xml</string>
 	<key>SUPublicEDKey</key>
     <string>+idH2/J7rJ0uuc2dxvfiD6MIAcPjw/etjuye5tLQ1eg=</string>
 	<key>SUEnableAutomaticChecks</key>
