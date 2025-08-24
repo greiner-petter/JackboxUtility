@@ -8,7 +8,7 @@
             <sparkle:version>1.4.3</sparkle:version>
             <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/JackboxUtility-1.4.3.dmg" length="28587563" type="application/octet-stream" sparkle:edSignature="1IxTQltbk+0BO/1DukGC6PWti35urQZ8HbBD7tKod6btromtjzR3RNUfqsnb/+r4X8JoAjxkG9tjIvWV9O6eBA=="/>
+            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.3.dmg" length="28587563" type="application/octet-stream" sparkle:edSignature="1IxTQltbk+0BO/1DukGC6PWti35urQZ8HbBD7tKod6btromtjzR3RNUfqsnb/+r4X8JoAjxkG9tjIvWV9O6eBA=="/>
         </item>
     </channel>
 </rss>
