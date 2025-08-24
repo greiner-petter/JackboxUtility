@@ -3,12 +3,23 @@
     <channel>
         <title>Jackbox Utility</title>
         <item>
+            <title>1.4.4</title>
+            <pubDate>Sun, 24 Aug 2025 20:10:37 +0200</pubDate>
+            <sparkle:version>1.4.4</sparkle:version>
+            <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.4.dmg" length="28600039" type="application/octet-stream" sparkle:edSignature="JnlKP0AAxLPqYkuZZTz8SYdSMGIDKN8pD7sT+w39QxS09WvMV7v+Qy8J97V224PhOp/BQvv2+BCAH8Wx7wEhAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility1.4.4-1.4.3.delta" sparkle:deltaFrom="1.4.3" length="54646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="864832" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,en" sparkle:edSignature="L/dLwIDEcQcNLvSjdFPRVnUluvKVYeeRDc08Zo6vE6ecrp0Uvk7GGO6DfxfdxIuIz7/AC9SV8mnGpDCW/3IYCQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.4.3</title>
             <pubDate>Sun, 24 Aug 2025 19:49:15 +0200</pubDate>
             <sparkle:version>1.4.3</sparkle:version>
             <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.3.dmg" length="28587563" type="application/octet-stream" sparkle:edSignature="1IxTQltbk+0BO/1DukGC6PWti35urQZ8HbBD7tKod6btromtjzR3RNUfqsnb/+r4X8JoAjxkG9tjIvWV9O6eBA=="/>
+            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.3.dmg" length="28600150" type="application/octet-stream" sparkle:edSignature="cS+Of5qUEo16lVZiRBfHHt+a473W7Jy3sDo0YSBT61usyqsMTCW43BRG009OQZU7kPquLGXQRUyw3Gaz7vHOCQ=="/>
         </item>
     </channel>
 </rss>
