@@ -305,6 +305,7 @@ class _MainContainerState extends State<MainContainer> with WindowListener {
 
       await WindowManagerService.saveCurrentScreenSize();
       if (shouldClose) {
+        MethodChannel('macos_channel').invokeMethod("ready_to_quit");
         windowManager.destroy();
       }
     }
