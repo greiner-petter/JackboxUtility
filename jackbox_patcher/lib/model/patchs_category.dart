@@ -26,15 +26,15 @@ class PatchCategory {
         smallDescription: json['smallDescription'],
         packPatches: [],
         gamePatches: [],
-        patchsIncluded: (json["patchs"] as List<dynamic>)
-            .map((e) => e.toString())
-            .toList());
+        patchsIncluded: (json["patchs"] as List<dynamic>).map((e) => e.toString()).toList());
   }
 
   void addPatchs(List<UserJackboxPack> packs) {
+    packPatches = [];
+    gamePatches = [];
     for (String patchId in patchsIncluded) {
       for (UserJackboxPack pack in packs) {
-        for (UserJackboxPackPatch packPatch in pack.patches) {
+        for (UserJackboxPackPatch packPatch in pack.allPatches) {
           if (packPatch.patch.id == patchId) {
             packPatches.add(packPatch);
           }
@@ -52,12 +52,12 @@ class PatchCategory {
 
   UserInstalledPatchStatus getInstalledStatus() {
     UserInstalledPatchStatus status = UserInstalledPatchStatus.INSTALLED;
-    for (UserJackboxPackPatch packPatch in packPatches) {
+    List<UserJackboxPackPatch> availablePackPatches = packPatches.where((element) => element.getPack().patches.any((patch) => patch.patch.id == element.patch.id)).toList();
+    for (UserJackboxPackPatch packPatch in availablePackPatches) {
       if (packPatch.getInstalledStatus() == UserInstalledPatchStatus.NOT_INSTALLED) {
         return UserInstalledPatchStatus.NOT_INSTALLED;
       }
-      if (packPatch.getInstalledStatus() ==
-          UserInstalledPatchStatus.INSTALLED_OUTDATED) {
+      if (packPatch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED_OUTDATED) {
         status = UserInstalledPatchStatus.INSTALLED_OUTDATED;
       }
     }
@@ -65,8 +65,7 @@ class PatchCategory {
       if (gamePatch.getInstalledStatus() == UserInstalledPatchStatus.NOT_INSTALLED) {
         return UserInstalledPatchStatus.NOT_INSTALLED;
       }
-      if (gamePatch.getInstalledStatus() ==
-          UserInstalledPatchStatus.INSTALLED_OUTDATED) {
+      if (gamePatch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED_OUTDATED) {
         status = UserInstalledPatchStatus.INSTALLED_OUTDATED;
       }
     }
@@ -77,26 +76,21 @@ class PatchCategory {
     List<PackAvailablePatchs> availablePatchs = [];
     for (UserJackboxPackPatch packPatch in packPatches) {
       UserJackboxPack pack = packPatch.getPack();
-      if (availablePatchs
-          .where((element) => element.pack.pack.id == pack.pack.id)
-          .isEmpty) {
-        availablePatchs.add(
-            PackAvailablePatchs(pack: pack, packPatchs: [], gamePatchs: []));
+      if (pack.patches.any((element) => element.patch.id == packPatch.patch.id) == false) continue;
+      if (availablePatchs.where((element) => element.pack.pack.id == pack.pack.id).isEmpty) {
+        availablePatchs.add(PackAvailablePatchs(pack: pack, packPatchs: [], gamePatchs: []));
       }
-      PackAvailablePatchs packAvailablePatchs = availablePatchs
-          .firstWhere((element) => element.pack.pack.id == pack.pack.id);
+      PackAvailablePatchs packAvailablePatchs =
+          availablePatchs.firstWhere((element) => element.pack.pack.id == pack.pack.id);
       packAvailablePatchs.packPatchs.add(packPatch);
     }
     for (UserJackboxGamePatch gamePatch in gamePatches) {
       UserJackboxPack pack = gamePatch.getPack();
-      if (availablePatchs
-          .where((element) => element.pack.pack.id == pack.pack.id)
-          .isEmpty) {
-        availablePatchs.add(
-            PackAvailablePatchs(pack: pack, packPatchs: [], gamePatchs: []));
+      if (availablePatchs.where((element) => element.pack.pack.id == pack.pack.id).isEmpty) {
+        availablePatchs.add(PackAvailablePatchs(pack: pack, packPatchs: [], gamePatchs: []));
       }
-      PackAvailablePatchs packAvailablePatchs = availablePatchs
-          .firstWhere((element) => element.pack.pack.id == pack.pack.id);
+      PackAvailablePatchs packAvailablePatchs =
+          availablePatchs.firstWhere((element) => element.pack.pack.id == pack.pack.id);
       packAvailablePatchs.gamePatchs.add(gamePatch);
     }
     return availablePatchs;
@@ -108,25 +102,21 @@ class PackAvailablePatchs {
   List<UserJackboxPackPatch> packPatchs;
   List<UserJackboxGamePatch> gamePatchs;
 
-  PackAvailablePatchs(
-      {required this.pack, required this.packPatchs, required this.gamePatchs});
+  PackAvailablePatchs({required this.pack, required this.packPatchs, required this.gamePatchs});
 
-      
   UserInstalledPatchStatus installedStatus() {
     if (!pack.owned) {
       return UserInstalledPatchStatus.INEXISTANT;
     }
     UserInstalledPatchStatus status = UserInstalledPatchStatus.NOT_INSTALLED;
     for (var patch in packPatchs) {
-      if (patch.getInstalledStatus() ==
-          UserInstalledPatchStatus.NOT_INSTALLED) {
+      if (patch.getInstalledStatus() == UserInstalledPatchStatus.NOT_INSTALLED) {
         return UserInstalledPatchStatus.NOT_INSTALLED;
       }
       if (patch.getInstalledStatus() == UserInstalledPatchStatus.INEXISTANT) {
         return UserInstalledPatchStatus.INEXISTANT;
       }
-      if (patch.getInstalledStatus() ==
-          UserInstalledPatchStatus.INSTALLED_OUTDATED) {
+      if (patch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED_OUTDATED) {
         status = UserInstalledPatchStatus.INSTALLED_OUTDATED;
       }
       if (patch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED &&
@@ -136,8 +126,7 @@ class PackAvailablePatchs {
     }
 
     for (var patch in gamePatchs) {
-      if (patch.getInstalledStatus() ==
-          UserInstalledPatchStatus.INSTALLED_OUTDATED) {
+      if (patch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED_OUTDATED) {
         status = UserInstalledPatchStatus.INSTALLED_OUTDATED;
       }
       if (patch.getInstalledStatus() == UserInstalledPatchStatus.INSTALLED &&

@@ -92,26 +92,36 @@ class UserData {
             currentGame.patches.add(UserJackboxGamePatch(patch: patch, installedVersion: patchVersionInstalled));
           }
         }
+      }
+    }
 
-        String? patchVersionInstalled = getInstalledVersion(userPack);
+    for (var userPack in packs) {
+      // Updating the patch version
+      String? patchVersionInstalled = getInstalledVersion(userPack);
 
-        // Load every patches in the pack
-        for (var patch in pack.patches) {
-          if (patch.supportedLaunchers.contains(userPack.origin)) {
-            userPack.patches.add(UserJackboxPackPatch(patch: patch, installedVersion: patchVersionInstalled));
-          }
+      // Load every patches in the pack
+      for (var patch in userPack.pack.patches) {
+        if (userPack.allPatches.where((element) => element.patch.id == patch.id).isNotEmpty) {
+          continue;
         }
-
-        // Do the same for the fixes
-        for (var patch in pack.fixes) {
-          userPack.fixes.add(UserJackboxPackPatch(patch: patch, installedVersion: patchVersionInstalled));
-        }
+        userPack.addPatch(UserJackboxPackPatch(patch: patch, installedVersion: patchVersionInstalled));
       }
 
-      for (var element in APIService().cachedCategories) {
-        element.addPatchs(packs);
+      // Do the same for the fixes
+      for (var patch in userPack.pack.fixes) {
+        if (userPack.fixes.where((element) => element.patch.id == patch.id).isNotEmpty) {
+          continue;
+        }
+        userPack.fixes.add(UserJackboxPackPatch(patch: patch, installedVersion: patchVersionInstalled));
       }
-      APIService().internalCache.notifyListeners();
+    }
+    syncCategories();
+    APIService().internalCache.notifyListeners();
+  }
+
+  void syncCategories() {
+    for (var element in APIService().cachedCategories) {
+      element.addPatchs(packs);
     }
   }
 
@@ -137,15 +147,15 @@ class UserData {
     }
     String versionFile;
     if (Platform.isMacOS) {
-      //stupid mac app file structure 
-      versionFile = "${userPack.pack.name}.app/Contents/Resources/macos/${userPack.pack.configuration!.versionFile.fromLauncher(userPack.origin)}";
+      //stupid mac app file structure
+      versionFile =
+          "${userPack.pack.name}.app/Contents/Resources/macos/${userPack.pack.configuration!.versionFile.fromLauncher(userPack.origin)}";
     } else {
       versionFile = userPack.pack.configuration!.versionFile.fromLauncher(userPack.origin);
     }
     JULogger().i("Version file detected for pack ${userPack.pack.name} with origin ${userPack.origin} : $versionFile");
     if (userPack.path == null) {
       return null;
-
     }
     File configurationFile = File("${userPack.path!}${Platform.pathSeparator}$versionFile");
     JULogger().i("Configuration file path : ${userPack.path!}${Platform.pathSeparator}${configurationFile.path}");

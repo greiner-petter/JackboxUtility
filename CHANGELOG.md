@@ -4,6 +4,51 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 2025-10-13
+### :sparkles: New Features
+- [`d8c065e`](https://github.com/JackboxUtility/JackboxUtility/commit/d8c065e81e3fbe45dc2998d5eeed57255e9ef342) - Add game finder from path *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+### :bug: Bug Fixes
+- [`084f641`](https://github.com/JackboxUtility/JackboxUtility/commit/084f64173d9a96fe77e02a94337c7a4492cb1b9c) - Add native to supported launchers *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`4519538`](https://github.com/JackboxUtility/JackboxUtility/commit/451953870fe3edd0334fe70267bec526f44450ed) - patch not installing in category *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`a9b0f9c`](https://github.com/JackboxUtility/JackboxUtility/commit/a9b0f9cc1b5dd66be7d329cea7204edff9a590dd) - Try to fix the category problem *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`6e31af4`](https://github.com/JackboxUtility/JackboxUtility/commit/6e31af4b670feb28e350212e6dba9d4675c0f2f3) - Fix categories not updating *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`ea6106c`](https://github.com/JackboxUtility/JackboxUtility/commit/ea6106cb39046adbd3bf706a996548d44e2ae1d5) - Remove duplicate patches in categories *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`9bf7322`](https://github.com/JackboxUtility/JackboxUtility/commit/9bf73226b45aa9605314f6ea97611fc739ff5875) - Ui fix *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`cb09f6c`](https://github.com/JackboxUtility/JackboxUtility/commit/cb09f6c82f3fc640afdb2d893f4bebd234347fb3) - Add back choose pack text *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+### :wrench: Chores
+- [`af3ca13`](https://github.com/JackboxUtility/JackboxUtility/commit/af3ca13aff94a916d209e8775b57454d77607b62) - Debugging pack available patchs *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`cea123c`](https://github.com/JackboxUtility/JackboxUtility/commit/cea123c9ac41586755798ac6110f334d0b8f1b5c) - Add more logs *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`ee4f587`](https://github.com/JackboxUtility/JackboxUtility/commit/ee4f5875238e1681256cf75176a9df2d230e0ada) - Update app icon on windows *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`25719fb`](https://github.com/JackboxUtility/JackboxUtility/commit/25719fbb394011e74ec7b8d554909fab74fd5682) - Update version *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+
+## [1.5.0] - 2025-10-08
+### :sparkles: New Features
+- [`edc6cb0`](https://github.com/JackboxUtility/JackboxUtility/commit/edc6cb0239ad8eb589e67d570279c06a959b8e12) - Add Mac support *(PR [#171](https://github.com/JackboxUtility/JackboxUtility/pull/171) by [@greiner-petter](https://github.com/greiner-petter))*
+- [`6e27e3f`](https://github.com/JackboxUtility/JackboxUtility/commit/6e27e3fc57aa609da8ddcb40eeaaaa27bb75a39b) - Added Latin1 decoding when extracting downloaded patches *(PR [#433](https://github.com/JackboxUtility/JackboxUtility/pull/433) by [@greiner-petter](https://github.com/greiner-petter))*
+- [`165b840`](https://github.com/JackboxUtility/JackboxUtility/commit/165b84028ed3533c14400138d5983e171e482910) - Upgrade versions and add errors message on startup *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+### :bug: Bug Fixes
+- [`bf4cdf1`](https://github.com/JackboxUtility/JackboxUtility/commit/bf4cdf1d70ecae15251f700e19aacc1e8632575e) - Remove unused language *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`5a003a1`](https://github.com/JackboxUtility/JackboxUtility/commit/5a003a11881b6dea1cdee5d7228ae2e5d78ecd3b) - Language changes *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`3988385`](https://github.com/JackboxUtility/JackboxUtility/commit/39883854e18df0248c499561956efc5e6521dff4) - Random tab and audio error *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`6865376`](https://github.com/JackboxUtility/JackboxUtility/commit/68653768e4ceab0d2c6a8b268badc4522efa3081) - Native patches get installed by default on startup *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`10a8400`](https://github.com/JackboxUtility/JackboxUtility/commit/10a8400f16d804aba8413a32dace41b8d2b42756) - Donate button is back *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`e209935`](https://github.com/JackboxUtility/JackboxUtility/commit/e209935d0b9b742eaa5976572df8ffe51c829247) - Remove duplicate install for pack category *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`f0a1930`](https://github.com/JackboxUtility/JackboxUtility/commit/f0a1930317dbc5ff43ee483e4501c18c8351b055) - Duplicate downloads on patch category *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`2593d09`](https://github.com/JackboxUtility/JackboxUtility/commit/2593d0925c01a5dc2ac46882a0a310c1994d0f3d) - Button not greyed out after installation *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`6660e08`](https://github.com/JackboxUtility/JackboxUtility/commit/6660e0812341e64ccc3e7ddb45a63b9d95033dd7) - fix the fix *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`c3abf45`](https://github.com/JackboxUtility/JackboxUtility/commit/c3abf455432d0ed99984140114ab05bb4e649cd4) - use backspace without closing when searching *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`3058131`](https://github.com/JackboxUtility/JackboxUtility/commit/3058131f3affe88376ad7dc1d653151d666a9972) - Duplicate close event *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`b830482`](https://github.com/JackboxUtility/JackboxUtility/commit/b83048253639ff9d47ce80e4b6c8a28f0f1f4f40) - Use filtered patch list *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+### :wrench: Chores
+- [`a10f80c`](https://github.com/JackboxUtility/JackboxUtility/commit/a10f80cb793159618ba1fb40f48b5c3b7869cea3) - Add sentry-native to gitignore *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+- [`b946ee8`](https://github.com/JackboxUtility/JackboxUtility/commit/b946ee8ec3f0b82501f87ed6809bc4faef9b474a) - Update version to 1.5.0 *(commit by [@AlexisL61](https://github.com/AlexisL61))*
+
+
 ## [1.4.2+2] - 2024-08-16
 ### :bug: Bug Fixes
 - [`7f8167e`](https://github.com/JackboxUtility/JackboxUtility/commit/7f8167e74fea0c7f7801f6cb7e04ac1e309a564f) - Remove mandatory configuration *(commit by [@AlexisL61](https://github.com/AlexisL61))*
@@ -204,3 +249,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.4.2]: https://github.com/JackboxUtility/JackboxUtility/compare/1.4.1...1.4.2
 [1.4.2+1]: https://github.com/JackboxUtility/JackboxUtility/compare/1.4.2...1.4.2+1
 [1.4.2+2]: https://github.com/JackboxUtility/JackboxUtility/compare/1.4.2+1...1.4.2+2
+[1.5.0]: https://github.com/JackboxUtility/JackboxUtility/compare/1.4.2+2...1.5.0
+[1.5.1]: https://github.com/JackboxUtility/JackboxUtility/compare/1.5.0...1.5.1

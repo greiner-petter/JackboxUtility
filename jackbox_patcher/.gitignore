@@ -34,9 +34,6 @@ migrate_working_dir/
 .pub/
 /build/
 
-# Ignore generated localization files
-lib/l10n/
-
 ## NuGet related
 /_deps/
 /packages/
