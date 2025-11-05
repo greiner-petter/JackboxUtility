@@ -3,6 +3,14 @@
     <channel>
         <title>Jackbox Utility</title>
         <item>
+            <title>1.5.1</title>
+            <pubDate>Wed, 05 Nov 2025 19:49:49 +0100</pubDate>
+            <sparkle:version>1.5.1</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.5.1.dmg" length="28496199" type="application/octet-stream" sparkle:edSignature="pvSZgVAyURCOvi7kiVfho7vmFvzxXcG6RdQEZmyDKxucLmFgloJtVWUhCGuLN9pAhb6Bi4FfEPC7FIC3/m/cDA=="/>
+        </item>
+        <item>
             <title>1.4.5</title>
             <pubDate>Wed, 27 Aug 2025 14:09:28 +0200</pubDate>
             <sparkle:version>1.4.5</sparkle:version>
@@ -17,14 +25,6 @@
             <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.4.dmg" length="28600039" type="application/octet-stream" sparkle:edSignature="JnlKP0AAxLPqYkuZZTz8SYdSMGIDKN8pD7sT+w39QxS09WvMV7v+Qy8J97V224PhOp/BQvv2+BCAH8Wx7wEhAA=="/>
-        </item>
-        <item>
-            <title>1.4.3</title>
-            <pubDate>Sun, 24 Aug 2025 19:49:15 +0200</pubDate>
-            <sparkle:version>1.4.3</sparkle:version>
-            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/greiner-petter/JackboxUtility/releases/download/v1.4.0/JackboxUtility-1.4.3.dmg" length="28600150" type="application/octet-stream" sparkle:edSignature="cS+Of5qUEo16lVZiRBfHHt+a473W7Jy3sDo0YSBT61usyqsMTCW43BRG009OQZU7kPquLGXQRUyw3Gaz7vHOCQ=="/>
         </item>
     </channel>
 </rss>
